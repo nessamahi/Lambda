@@ -12,8 +12,8 @@ import java.util.function.Predicate;
 public class PredicateAndConsumerExample {
     //lambda behaves the same for instance method and static method
 
-    Predicate<Student> p1 = (s) -> s.getGradeLevel() >= 3;
-    Predicate<Student> p2 = (s) -> s.getGpa() >= 3.9;
+    static Predicate<Student> p1 = (s) -> s.getGradeLevel() >= 3;
+    static Predicate<Student> p2 = (s) -> s.getGpa() >= 3.9;
     BiPredicate<Integer, Double> biPredicate = (gradeLevel, gpa) -> gradeLevel >= 3 && gpa >= 3.9;
 
     BiConsumer<String, List<String>> studentBiConsumer = (name, activities) -> {
