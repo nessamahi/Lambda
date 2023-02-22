@@ -25,6 +25,10 @@ public class Student {
         this.activities = activities;
     }
 
+    public Student(String s) {
+        this.name = s;
+    }
+
     public String getName() {
         return name;
     }
@@ -63,6 +67,10 @@ public class Student {
 
     public void setActivities(List<String> activities) {
         this.activities = activities;
+    }
+
+    public void printActivities(){
+        System.out.println(this.activities);
     }
 
     @Override
