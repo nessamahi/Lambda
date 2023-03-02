@@ -10,8 +10,19 @@ public class Student {
     private String name;
     private int gradeLevel;
     private double gpa;
+
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int noteBook) {
+        this.name = name;
+        this.gradeLevel = gradeLevel;
+        this.gpa = gpa;
+        this.gender = gender;
+        this.activities = activities;
+        this.noteBook = noteBook;
+    }
+
     private String gender;
     private List<String> activities;
+    private int noteBook;
 
     public Student(){
 
@@ -27,6 +38,14 @@ public class Student {
 
     public Student(String s) {
         this.name = s;
+    }
+
+    public int getNoteBook() {
+        return noteBook;
+    }
+
+    public void setNoteBook(int noteBook) {
+        this.noteBook = noteBook;
     }
 
     public String getName() {
@@ -81,6 +100,7 @@ public class Student {
                 ", gpa=" + gpa +
                 ", gender='" + gender + '\'' +
                 ", activities=" + activities +
+                ", noteBook=" + noteBook +
                 '}';
     }
 }
